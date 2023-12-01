@@ -5,10 +5,10 @@ public class Main {
         DatabaseServiceManager databaseServiceManager = new DatabaseServiceManager();
         try {
            databaseServiceManager.createDB();
-            //databaseServiceManager.fillProductTable();
-            //databaseServiceManager.fillConsumerTable();
-            //databaseServiceManager.fillOrderTable();
-            //databaseServiceManager.fillGoodsInOrder();
+            databaseServiceManager.fillProductTable();
+            databaseServiceManager.fillConsumerTable();
+            databaseServiceManager.fillOrderTable();
+            databaseServiceManager.fillGoodsInOrder();
             databaseServiceManager.showAllConsumersOrders();
         } catch (SQLException e) {
             throw new RuntimeException(e);
